@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Happy Father's Day ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .heart-float {
+
+            position: fixed;
+            bottom: -50px;
+            font-size: 30px;
+            animation: floatHeart 6s linear infinite;
+            z-index: 0;
+            pointer-events: none;
+
+        }
+
+
+        @keyframes floatHeart {
+
+            0% {
+
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+
+            }
+
+
+            100% {
+
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+
+            }
+
+        }
+
+        .petal {
+
+            position: fixed;
+            top: -50px;
+            font-size: 25px;
+            animation: fallPetal 8s linear infinite;
+            z-index: 0;
+            pointer-events: none;
+
+        }
+
+
+
+        @keyframes fallPetal {
+
+
+            0% {
+
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+
+            }
+
+
+            100% {
+
+                transform: translateY(110vh) rotate(360deg);
+                opacity: 0;
+
+            }
+
+        }
+
+        .music-box {
+
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+
+        }
+
+
+        .music-box button {
+
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 14px;
+
+        }
+
+        body {
+
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2, #ff758c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+
+        }
+
+        .container {
+
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            animation: show 1.5s ease;
+
+        }
+
+        @keyframes show {
+
+            from {
+
+                opacity: 0;
+                transform: translateY(50px);
+
+            }
+
+
+            to {
+
+                opacity: 1;
+                transform: translateY(0);
+
+            }
+
+        }
+
+        h1 {
+
+            color: #ff4d6d;
+            font-size: 45px;
+            margin-bottom: 10px;
+
+        }
+
+
+        h2 {
+
+            color: #5a189a;
+            margin: 25px 0;
+
+        }
+
+        .heart {
+
+            font-size: 45px;
+            animation: heartbeat 1s infinite;
+
+        }
+
+        @keyframes heartbeat {
+            50% {
+
+                transform: scale(1.2);
+
+            }
+
+        }
+
+        .main-photo {
+
+
+            width: 260px;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid #1b4be8;
+            margin: 20px;
+
+        }
+
+        .message {
+
+
+            background: linear-gradient(135deg, #5d9dfd, #6792c9);
+            padding: 25px;
+            border-radius: 20px;
+            margin: 25px 0;
+
+        }
+
+        p {
+
+            color: #000000;
+            font-size: 22px;
+            line-height: 1.8;
+
+        }
+
+        .gallery {
+
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+
+        }
+
+        .gallery img {
+
+
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 5px solid #ffd166;
+            transition: 0.4s;
+
+        }
+
+        .gallery img:hover {
+
+
+            transform: scale(1.08) rotate(2deg);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        }
+
+        ul {
+
+            list-style: none;
+
+        }
+
+        li {
+            background: #f8f9fa;
+            margin: 12px;
+            padding: 15px;
+            border-radius: 15px;
+            font-size: 17px;
+            transition: 0.3s;
+
+        }
+
+        li:hover {
+
+
+            background: #ffd6e0;
+            transform: translateX(10px);
+
+        }
+
+        blockquote {
+
+
+            background: #e0c3fc;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 20px;
+            font-size: 20px;
+            font-style: italic;
+
+        }
+
+        button {
+
+
+            padding: 15px 35px;
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+
+        button:hover {
+
+
+            background: #c9184a;
+            transform: scale(1.1);
+
+        }
+
+        footer {
+
+
+            margin-top: 30px;
+            color: #555;
+
+        }
+
+        @media(max-width:600px) {
+            .container {
+
+                padding: 20px;
+
+            }
+
+            h1 {
+
+                font-size: 35px;
+
+            }
+
+            .gallery {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hearts-container"></div>
+    <div id="petals-container"></div>
+    <audio id="bg-music" loop>
+
+        <source src="MaRynn Taylor - Dads and Daughters (Official Lyric Video).mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <div class="music-box">
+
+        <button onclick="playMusic()">
+            🎵 Play Music
+        </button>
+
+
+        <button onclick="pauseMusic()">
+            ⏸ Pause
+        </button>
+
+    </div>
+
+    <div class="container">
+        <div class="heart">
+
+            ❤️
+
+        </div>
+
+        <h1>
+
+            Happy Father's Day,Papa! 💖
+
+        </h1>
+        <h2>
+
+            My first hero, my forever safe place 💖👑
+
+        </h2>
+        <img class="main-photo" src="papaPic1.jpeg" alt="My Father">
+        <div class="message">
+            <p>
+
+                Behind every smile of mine is my father's endless love and sacrifices.
+                He does everything for us without a single complaint.
+
+            </p>
+            <br>
+            <p>
+
+                Thank you,Papa for always protecting me, supporting my dreams and teaching me the meaning of kindness
+                and strength.
+
+            </p>
+        </div>
+        <h2>
+
+            Beautiful Memories With Papa 📸❤️
+
+        </h2>
+        <div class="gallery">
+
+
+            <img src="papaPic5.jpeg" alt="Memory 1">
+
+
+            <img src="papaPic2.jpeg" alt="Memory 2">
+
+
+            <img src="papaPic3.jpeg" alt="Memory 3">
+
+
+            <img src="papaPic4.jpeg" alt="Memory 4">
+
+        </div>
+        <h2>
+
+            Why My Father Is Special ❤️
+
+        </h2>
+
+        <ul>
+
+
+            <li>
+                🌟 He always believes in my dreams.
+            </li>
+            <li>
+                💪 He works hard for our happiness.
+            </li>
+            <li>
+                ❤️ His love and care are priceless.
+            </li>
+            <li>
+                🌎 He is my biggest inspiration.
+            </li>
+
+
+        </ul>
+        <blockquote>
+
+
+            "A father's love is the greatest blessing a child can have."
+
+
+        </blockquote>
+        <button onclick="showMessage()">
+
+            Click For A Message 🤍
+
+        </button>
+        <footer>
+            <p>
+
+                Made with endless love for my Papa ❤️
+
+            </p>
+            <p>
+
+                Happy Father's Day, Papa💖
+
+            </p>
+
+
+        </footer>
+    </div>
+    <script>
+        alert("JavaScript is working");
+        function createHeart() {
+
+            const heart = document.createElement("div");
+
+            heart.className = "heart-float";
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left = Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (Math.random() * 3 + 3) + "s";
+
+
+            document.getElementById("hearts-container")
+                .appendChild(heart);
+
+
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+
+        }
+
+
+
+        setInterval(createHeart, 500);
+
+        function createPetal() {
+
+            const petal = document.createElement("div");
+
+            petal.className = "petal";
+
+            petal.innerHTML = "🌸";
+
+
+            petal.style.left = Math.random() * 100 + "vw";
+
+
+            petal.style.animationDuration =
+                (Math.random() * 5 + 5) + "s";
+
+
+            document.getElementById("petals-container")
+                .appendChild(petal);
+
+
+
+            setTimeout(() => {
+
+                petal.remove();
+
+            }, 8000);
+
+
+        }
+        setInterval(createPetal, 700);
+        const music = document.getElementById("bg-music");
+
+
+        function playMusic() {
+
+            music.play();
+
+        }
+
+
+        function pauseMusic() {
+
+            music.pause();
+
+        }
+        function showMessage() {
+
+
+            let message = window.open();
+
+
+            message.document.write(`
+
+  
+`);
+
+
+        }
+    </script>
+</body>
+
+</html>
